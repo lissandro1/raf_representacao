@@ -1,0 +1,492 @@
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.4;
+}
+
+.header{
+    position:left;
+    background-color: rgb(4, 26, 85);
+    border-bottom: 4px solid #47638d;
+  
+}
+
+.js .header{
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+
+
+.header img{
+    width: 160px;
+    padding: 16px 20px;
+    transition: .4s;
+}
+
+
+.header__nav{
+    clear: left;
+}
+
+
+.header__nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+
+.header__nav li{
+    list-style-type: none;
+    background: #242c2c;
+    text-align: center;
+    border-bottom: 1px dotted rgba(255,255,255, 0.2);
+}
+
+.header__nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #47638d;
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+    padding: 25px 0;
+    transition: 0.5s ease;
+}
+
+.header__nav a:hover{
+    color:  #799fd8;    
+}
+
+
+.header__btnMenu{
+    float: right;
+    margin: 2em;
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    color: #47638d;
+}
+
+.js .header__nav{
+    transition: max-height 1s;
+}
+
+.js .product{
+    overflow: hidden;
+    color: #47638d;
+}
+
+.js .product .slideshow{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    max-width: 950px;
+}
+
+/* como estava */
+/* .js .product figure{
+    opacity: 0;
+    transition: 1s opacity;
+    width:100%;
+    position: absolute;
+    top: 0;
+    left: 0; 
+} */
+
+.js .product figure{
+    opacity: 0;
+    transition: 1s opacity;
+    width:100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    margin: 0% 5%;
+}
+
+.js .product figure.show{
+    opacity: 1;
+    position: static;
+}
+
+.js .product .prev, .js .product .next{
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+}
+
+.js .product .prev{
+    left: 5px;
+
+}
+
+.js .product .next{
+    right: 5px;
+
+}
+
+.mkt{
+    overflow: auto;
+}
+
+.mkt img{
+    margin-top: 30%;
+    margin-bottom: 30px;
+    width: 100%;
+    height: auto;
+    position: relative;
+  
+}
+
+
+h2{
+    display: inline-block;
+    text-transform: uppercase;
+    color: #47638d;
+    font-size: .9em;
+    font-weight: 600;
+    letter-spacing: .1em;
+    background-color:  rgb(4, 26, 85);
+    padding: 10px 55px;
+    margin:0;   
+}
+
+#destaques{
+    margin-top: 0;
+}
+
+.product{
+    width: 100%;
+    margin: 30px auto;
+    overflow: auto;
+}
+
+.slideshow{
+
+    white-space: nowrap;
+    width: 10%;
+}
+
+.slideshow figure{
+    display: inline-block;
+}
+
+
+.footer{
+    background-color:  rgb(4, 26, 85);
+    color: #47638d;
+    padding: 10px 15px 250px;
+    
+}
+
+.footer__links{
+    list-style: none;
+    
+     
+}
+
+.footer__links li{
+    display: inline-block;
+    padding-right: 65px;
+    margin: -25px;
+   
+ 
+}
+
+.footer__links a{
+    text-decoration: none;
+    color: #47638d; 
+
+}
+
+.footer p{
+    font-size: 14px;
+    margin:0;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+.social_media{
+    font-size: 14px;
+    padding-left: 15px;
+    padding-bottom: 8px;
+}
+
+.ass{
+    line-height: 8px;
+}
+
+.eu{
+    font-style: italic;
+    margin-top: 50px;
+}
+
+.eu p, .eu a{
+    font-size: 12px;
+    text-decoration: none;
+    color: #47638d;
+}
+
+.eu a:hover{
+    color: #799fd8;
+}
+
+/* ----------------somos-------------------- */
+
+.somos p{
+    color: rgb(4, 26, 85);
+    padding: 5px 90px 100px;
+    text-align: justify;
+   
+}
+
+.vetor__somos img{
+    display: block;
+    width: 90%;
+    margin: 0px auto;
+    transition: .5s;
+}
+
+/* -------------catalogo----------------------- */
+
+.h2__cat{
+   margin-top: 33%;
+}
+
+.link_list{
+    display: block;
+    color: #47638d;
+    font-size: 14px;
+    font-weight: 800;
+    margin: 5px 0px 10px 5px;
+    text-decoration: none;
+}
+
+.img__product{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-auto-rows: auto;
+    grid-gap: 0;
+    margin-bottom: 20px;
+}
+
+.img__product img{
+    display: block;
+    width: 100%;
+    outline: 3px solid white;
+    outline-offset: -3px;   
+}
+
+#img__document{
+    color: #47638d;
+    margin-top:25px;
+   
+    
+}
+
+.h2__download{
+    margin-bottom: 10px;
+    margin-top: 20px;
+
+}
+
+.back{
+    background: url(../img/doc.jpg);
+    background-repeat: no-repeat;
+    background-size: 30%;
+    max-width: 98%;
+    background-position: top right; 
+   
+    
+}
+
+.download_cat li{
+    display: block;
+   
+  
+}
+
+.download_cat a{
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    background-color: #47638d;
+    color: white;
+    margin: 15px 10px 10px 0px;
+   
+}
+
+.download_cat a:hover{
+    background-color: rgb(4, 26, 85);
+
+}
+
+
+.button_up a{
+    display: block;
+    text-decoration: none;
+    text-align: right;
+    color: #47638d;
+    font-size: 14px;
+    padding:20px 15px 10px 0px;
+}
+
+/* -------------representadas--------------------- */
+
+.img__representadas{
+    margin-top: 25px;
+    margin-bottom: 70px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-auto-rows: auto;
+    grid-gap: 0;
+     
+}
+
+.img__representadas img{
+    display: block;
+    width: 100%;
+
+}
+
+
+/* ------------------contatos--------------------- */
+
+.contatos__list{
+    margin-bottom: 80px;
+}
+
+.contatos__list li {
+    display: block;
+    text-decoration: none;
+    padding: 8px 0px;
+    color: rgb(4, 26, 85); 
+}
+
+.contatos__list i{
+    margin-right: 5px;
+    color: #47638d;
+    text-decoration: none;
+    
+}
+
+
+
+@media screen and (min-width: 1025px) {
+    .header{
+        overflow: hidden;
+        position: fixed;
+        z-index: 100;
+        width: 100%; 
+        top:0;  
+    }
+
+    .header img{
+        width: 200px;
+        padding: 18px 25px;
+    }
+
+
+    .logo-text{
+        width: 30%;
+        box-sizing: border-box;
+    }
+
+    .header__btnMenu{
+        display: none;
+    }
+
+    .header__nav{
+        float: right;
+        width: 70%;
+        clear: none;
+        max-width: 600px;
+       
+    }
+
+    .header__nav ul{
+        display: flex;
+        justify-content: space-around;
+        
+    }
+
+    .header__nav a{
+        /* float:left;
+        text-align: center; */
+        margin-top: 18px;
+        top: 50%;
+    
+    }
+
+    .header__nav li{
+        border-bottom: none;
+        flex-grow: 0.6;
+        background-color:  rgb(4, 26, 85);
+    
+    }
+
+
+    .mkt img{
+        max-width: 700px;
+        display: block;
+        margin: 135px auto 100px;
+
+    }
+
+    .js .product figure{
+        margin: 0% 30%;
+    }
+
+/* ----------------somos-------------------- */
+
+    .somos p{
+        padding: 50px 30px 480px 700px;
+ 
+    }
+
+    .vetor__somos img{
+        margin-top: 0;
+        float: left;
+        width: 50%;
+        left: 0;
+    }
+
+/* ----------------catalogo------------------ */ 
+
+    .h2__cat{
+        margin-top: 160px;
+    }
+
+    .img__product{
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .back{
+        background: url(../img/doc.jpg);
+        background-repeat: no-repeat;
+        background-size: 30%;
+        max-width: 60%;
+        background-position: 90% 0%;
+       
+    }
+
+/* -------------representadas--------------------- */
+
+.img__representadas{
+    margin-top: 10px;
+    margin-bottom: 60px;
+    align-items: center;
+  
+}
+
+/* ------------------contatos--------------------- */
+
+.contatos__list{
+    margin-top: 20px;
+}
+
+    
+}
